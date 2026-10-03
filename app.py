@@ -38,6 +38,12 @@ _DISCLAIMER = (
     "⚠️ The confidence score represents the model's prediction confidence, not proof "
     "that the news is factually true or false. Always verify with trusted sources."
 )
+_DATASET_NOTE = (
+    "The model does not check whether this exact story appears in Fake.csv or True.csv. "
+    "It classifies your text using language patterns learned from the training data. "
+    "If the story or topic is unlike those examples, the prediction may be unreliable. "
+    "For best results, enter English news text similar in style to the training dataset."
+)
 
 
 @st.cache_resource
@@ -189,6 +195,7 @@ def _render_detect_tab(bundle: ArtifactBundle, model_name: str) -> None:
         placeholder="Paste a headline or article here (at least five words)...",
         help="English-language text works best. Publisher and date fields are not used.",
     )
+    st.info(_DATASET_NOTE)
     if st.button("Analyze article", type="primary", use_container_width=True):
         try:
             with st.spinner("Cleaning text and analyzing with the selected model..."):
@@ -346,6 +353,10 @@ def _render_about_tab() -> None:
         This educational NLP application estimates whether a supplied article resembles
         examples labeled **FAKE** or **REAL** in its training data. It is a text classifier,
         not a verification service.
+
+        The model does not look up an exact story in `Fake.csv` or `True.csv`. It predicts
+        from language patterns learned during training, so text unlike the training examples
+        may receive an unreliable result.
 
         **Pipeline:** publisher/dateline cleanup and shared text preprocessing → TF-IDF
         unigram/bigram features → one of three trained classifiers → class probabilities

@@ -91,6 +91,9 @@ Confidence: 96.1%
 The probability chart shows both class probabilities. Confidence is the larger
 class probability from the selected model. Treat uncertain or high-confidence
 predictions as a starting point for review, not as a factual verdict.
+The classifier does not check whether the exact story appears in `Fake.csv` or
+`True.csv`; it predicts from patterns learned during training. If a story or topic
+differs substantially from the training examples, the result may be unreliable.
 
 ## Evaluation metrics
 
