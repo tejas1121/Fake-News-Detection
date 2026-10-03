@@ -1,0 +1,293 @@
+{
+  "best_model": "Calibrated Linear SVM",
+  "demo_mode": false,
+  "train_size": 31275,
+  "test_size": 7819,
+  "feature_count": 50000,
+  "model_files": {
+    "Logistic Regression": "model_logistic_regression.joblib",
+    "Multinomial Naive Bayes": "model_multinomial_naive_bayes.joblib",
+    "Calibrated Linear SVM": "model_calibrated_linear_svm.joblib"
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.9829901521933752,
+      "precision_weighted": 0.9830332044269894,
+      "recall_weighted": 0.9829901521933752,
+      "f1_weighted": 0.9829816854096872,
+      "precision_real": 0.9794488556749182,
+      "recall_real": 0.9893842887473461,
+      "f1_binary_real": 0.9843915033446778,
+      "cv_accuracy_mean": 0.9824460431654677,
+      "cv_accuracy_std": 0.001346726758666843,
+      "confusion_matrix": [
+        [
+          3492,
+          88
+        ],
+        [
+          45,
+          4194
+        ]
+      ],
+      "classification_report": {
+        "FAKE": {
+          "precision": 0.9872773536895675,
+          "recall": 0.9754189944134078,
+          "f1-score": 0.9813123507095687,
+          "support": 3580.0
+        },
+        "REAL": {
+          "precision": 0.9794488556749182,
+          "recall": 0.9893842887473461,
+          "f1-score": 0.9843915033446778,
+          "support": 4239.0
+        },
+        "accuracy": 0.9829901521933752,
+        "macro avg": {
+          "precision": 0.9833631046822429,
+          "recall": 0.9824016415803769,
+          "f1-score": 0.9828519270271232,
+          "support": 7819.0
+        },
+        "weighted avg": {
+          "precision": 0.9830332044269894,
+          "recall": 0.9829901521933752,
+          "f1-score": 0.9829816854096872,
+          "support": 7819.0
+        }
+      }
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.9520399028008697,
+      "precision_weighted": 0.9521066142397525,
+      "recall_weighted": 0.9520399028008697,
+      "f1_weighted": 0.9520562129755937,
+      "precision_real": 0.9593437945791726,
+      "recall_real": 0.9518754423213022,
+      "f1_binary_real": 0.955595026642984,
+      "cv_accuracy_mean": 0.9522621902478017,
+      "cv_accuracy_std": 0.003299103287589475,
+      "confusion_matrix": [
+        [
+          3409,
+          171
+        ],
+        [
+          204,
+          4035
+        ]
+      ],
+      "classification_report": {
+        "FAKE": {
+          "precision": 0.9435372266814281,
+          "recall": 0.9522346368715083,
+          "f1-score": 0.947865980814681,
+          "support": 3580.0
+        },
+        "REAL": {
+          "precision": 0.9593437945791726,
+          "recall": 0.9518754423213022,
+          "f1-score": 0.955595026642984,
+          "support": 4239.0
+        },
+        "accuracy": 0.9520399028008697,
+        "macro avg": {
+          "precision": 0.9514405106303003,
+          "recall": 0.9520550395964053,
+          "f1-score": 0.9517305037288325,
+          "support": 7819.0
+        },
+        "weighted avg": {
+          "precision": 0.9521066142397525,
+          "recall": 0.9520399028008697,
+          "f1-score": 0.9520562129755937,
+          "support": 7819.0
+        }
+      }
+    },
+    "Calibrated Linear SVM": {
+      "accuracy": 0.991303235707891,
+      "precision_weighted": 0.9913037428182607,
+      "recall_weighted": 0.991303235707891,
+      "f1_weighted": 0.9913034239547769,
+      "precision_real": 0.9922114703799858,
+      "recall_real": 0.9917433356923803,
+      "f1_binary_real": 0.9919773478055687,
+      "cv_accuracy_mean": 0.9898960831334932,
+      "cv_accuracy_std": 0.0010478637639120179,
+      "confusion_matrix": [
+        [
+          3547,
+          33
+        ],
+        [
+          35,
+          4204
+        ]
+      ],
+      "classification_report": {
+        "FAKE": {
+          "precision": 0.9902289223897264,
+          "recall": 0.990782122905028,
+          "f1-score": 0.9905054454063111,
+          "support": 3580.0
+        },
+        "REAL": {
+          "precision": 0.9922114703799858,
+          "recall": 0.9917433356923803,
+          "f1-score": 0.9919773478055687,
+          "support": 4239.0
+        },
+        "accuracy": 0.991303235707891,
+        "macro avg": {
+          "precision": 0.9912201963848561,
+          "recall": 0.9912627292987042,
+          "f1-score": 0.9912413966059399,
+          "support": 7819.0
+        },
+        "weighted avg": {
+          "precision": 0.9913037428182607,
+          "recall": 0.991303235707891,
+          "f1-score": 0.9913034239547769,
+          "support": 7819.0
+        }
+      }
+    }
+  },
+  "top_indicative_words": {
+    "FAKE": [
+      {
+        "word": "via",
+        "score": -5.471646111252461
+      },
+      {
+        "word": "video",
+        "score": -4.6066158630651355
+      },
+      {
+        "word": "read",
+        "score": -4.411180411923883
+      },
+      {
+        "word": "gop",
+        "score": -3.3034645904681974
+      },
+      {
+        "word": "president trump",
+        "score": -2.520915922714292
+      },
+      {
+        "word": "obama",
+        "score": -2.504551291077864
+      },
+      {
+        "word": "watch",
+        "score": -2.5039297198530077
+      },
+      {
+        "word": "breaking",
+        "score": -2.4232073644792966
+      },
+      {
+        "word": "president obama",
+        "score": -2.281080091277199
+      },
+      {
+        "word": "sen",
+        "score": -2.203741741633371
+      },
+      {
+        "word": "hillary",
+        "score": -2.0263232576141696
+      },
+      {
+        "word": "rep",
+        "score": -1.9452845318757577
+      },
+      {
+        "word": "even",
+        "score": -1.806689741372057
+      },
+      {
+        "word": "america",
+        "score": -1.7982836331874443
+      },
+      {
+        "word": "com",
+        "score": -1.7054086956864265
+      }
+    ],
+    "REAL": [
+      {
+        "word": "said",
+        "score": 6.535087975389069
+      },
+      {
+        "word": "president donald",
+        "score": 3.9225390071579653
+      },
+      {
+        "word": "wednesday",
+        "score": 2.533553856601539
+      },
+      {
+        "word": "tuesday",
+        "score": 2.3949338105436007
+      },
+      {
+        "word": "thursday",
+        "score": 2.3414809730718567
+      },
+      {
+        "word": "nov",
+        "score": 2.3394974587445807
+      },
+      {
+        "word": "friday",
+        "score": 1.9617932731446521
+      },
+      {
+        "word": "monday",
+        "score": 1.9117544657914387
+      },
+      {
+        "word": "president barack",
+        "score": 1.7841189556216772
+      },
+      {
+        "word": "representative",
+        "score": 1.6125049438974683
+      },
+      {
+        "word": "news conference",
+        "score": 1.562070376680978
+      },
+      {
+        "word": "rival",
+        "score": 1.5467347607353394
+      },
+      {
+        "word": "nov election",
+        "score": 1.5249509256030436
+      },
+      {
+        "word": "factbox",
+        "score": 1.5130945692067734
+      },
+      {
+        "word": "said statement",
+        "score": 1.481532547373331
+      }
+    ]
+  },
+  "plots": {
+    "model_comparison": "model_comparison.png",
+    "class_distribution": "class_distribution.png",
+    "confusion_matrices": {
+      "Logistic Regression": "confusion_matrix_logistic_regression.png",
+      "Multinomial Naive Bayes": "confusion_matrix_multinomial_naive_bayes.png",
+      "Calibrated Linear SVM": "confusion_matrix_calibrated_linear_svm.png"
+    }
+  }
+}
